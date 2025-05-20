@@ -1,0 +1,97 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "渲染类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$js_title_background",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$js_title",
+            "$js_title"
+        ],
+        "image_scaled": false
+    },
+    "color": "$js_background",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NetSerT",
+            "color": "$js_text",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_NetSerT",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "yxsz",
+                    "name": "音效设置",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "yxdj",
+                    "name": "打击",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "yxfz",
+                    "name": "放置",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "yxph",
+                    "name": "破坏",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

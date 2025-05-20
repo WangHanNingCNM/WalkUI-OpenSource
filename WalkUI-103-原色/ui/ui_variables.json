@@ -1,0 +1,51 @@
+{
+    "menu_item_hide_color": "#D32D2F",
+    "menu_item_child_color": "#FF00FF",
+    "menu_color": "#C8F0FFF0",
+    "menu_title_background_color": "#E600FFFF",
+    "menu_title_gradient_text_begin_color": [
+        255,
+        0,
+        0
+    ],
+    "menu_title_gradient_text_end_color": [
+        0,
+        15,
+        15
+    ],
+    "menu_item_color": "#8A2BE2",
+    "menu_item_set_color": "#9C27B0",
+    "menu_item_main_color": "#B4000000",
+    "menu_background_image_main": "背景/白天_主要.png",
+    "menu_background_image": "背景/白天_次要.png",
+    "menu_radius": 5,
+    "标题颜色3": [
+        255,
+        0,
+        0
+    ],
+    "标题颜色4": [
+        0,
+        15,
+        15
+    ],
+    "标题背景颜色": "#BBFFFF",
+    "标题颜色1": "#FF0000",
+    "标题颜色2": "#0000FF",
+    "文本颜色": "#FF8800",
+    "UI背景": "#ffffff",
+    "战斗类": "#FFA07A",
+    "移动类": "#00F5FF",
+    "渲染类": "#FFB90F",
+    "网络类": "#54FF9F",
+    "玩家类": "#FFFF00",
+    "世界类": "#7FFFD4",
+    "设置类": "#9370DB",
+    "漏洞类": "#EEE9E9",
+    "辅助类": "#FFF68F",
+    "js_title": "#0000CD",
+    "js_title_background": "#FFDEAD",
+    "js_background": "#ffffff",
+    "js_text": "#0000CD",
+    "js_subtext": "#FF00FF"
+}
