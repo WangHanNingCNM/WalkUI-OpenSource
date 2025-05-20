@@ -1,0 +1,52 @@
+{
+    "name": "WalkUI\n作者: 3636933643",
+    "theme": "Theme.MaterialComponents.DayNight",
+    "ui": [
+        "WalkUI/主菜单",
+        "WalkUI/世界类",
+        "WalkUI/战斗类",
+        "WalkUI/玩家类",
+        "WalkUI/移动类",
+        "WalkUI/网络类",
+        "WalkUI/漏洞类",
+        "WalkUI/设置类",
+        "WalkUI/渲染类",
+        "WalkUI/辅助类",
+        "扩展功能/扩展功能",
+        "扩展功能/指令类",
+        "扩展功能/百米光环",
+        "扩展功能/脚本类",
+        "扩展功能/wt",
+        "建筑工具Rebirth/建筑工具",
+        "建筑工具Rebirth/设置项",
+        "NoveXare/NoveXare",
+        "NoveXare/辅助类",
+        "NoveXare/战斗类",
+        "NoveXare/事件类",
+        "NoveXare/娱乐类",
+        "NoveXare/移动类",
+        "NoveXare/玩家类",
+        "NoveXare/渲染类",
+        "NoveXare/配置类",
+        "NetSerT/NetSerT",
+        "NetSerT/崩溃类",
+        "NetSerT/辅助类",
+        "NetSerT/玩家类",
+        "NetSerT/攻击类",
+        "NetSerT/渲染类",
+        "NetSerT/权限类"
+    ],
+    "fun": [
+        "script_build_tool",
+        "script_py_executor",
+        "build_tool_rebirth",
+        "extra_nove_xare",
+        "extra_NetSerT",
+        "fun_WTool"
+    ],
+    "script": [
+        "base_script.js",
+        "build_tool.js",
+        "WTool.js"
+    ]
+}

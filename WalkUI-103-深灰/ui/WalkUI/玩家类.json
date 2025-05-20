@@ -1,0 +1,1044 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "玩家类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$玩家类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "传送菜单+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_teleport_menu",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/cscd.png",
+                "on": "开启/cscd.png",
+                "off": "关闭/cscd.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动瞄准",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_aimbot",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdmz.png",
+                "on": "开启/zdmz.png",
+                "off": "关闭/zdmz.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "depart",
+                    "name": "分离相机",
+                    "color": "$文本颜色",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "无摔落伤害",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_fall",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/wdlsh.png",
+                "on": "开启/wdlsh.png",
+                "off": "关闭/wdlsh.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_move_check",
+                    "name": "绕过移动检查",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_fall_check",
+                    "name": "绕过摔落检查",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "玩家能力",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_abilities",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/wjnl.png",
+                "on": "开启/wjnl.png",
+                "off": "关闭/wjnl.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "mayfly",
+                    "name": "可飞行",
+                    "color": "$文本颜色",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "flying",
+                    "name": "飞行状态",
+                    "color": "$文本颜色",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "noclip",
+                    "name": "穿墙",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "flySpeed",
+                    "format": "飞行速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "walkSpeed",
+                    "format": "步行速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "op",
+                    "name": "操作员",
+                    "color": "$文本颜色",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "麒麟臂",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_fast_destroy",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/czzs.png",
+                "on": "开启/czzs.png",
+                "off": "关闭/czzs.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动图腾",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_totem",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdtt.png",
+                "on": "开启/zdtt.png",
+                "off": "关闭/zdtt.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动穿装",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_armor",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdcz.png",
+                "on": "开启/zdcz.png",
+                "off": "关闭/zdcz.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动搭路",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_build",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zddl.png",
+                "on": "开启/zddl.png",
+                "off": "关闭/zddl.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "force_place",
+                    "name": "强行放置",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "lock_y",
+                    "name": "锁定Y轴",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "offset",
+                    "format": "高度偏移%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.5,
+                    "min": 1.80,
+                    "max": 5.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动开箱",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_chest_aura",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdkx.png",
+                "on": "开启/zdkx.png",
+                "off": "关闭/zdkx.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 6.0,
+                    "min": 1.0,
+                    "max": 6.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "ignore_screen",
+                    "name": "忽略容器屏幕",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "快速拿物",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_chest_stealer",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ksqw.png",
+                "on": "开启/ksqw.png",
+                "off": "关闭/ksqw.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "auto_close",
+                    "name": "自动关闭",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "delay",
+                    "format": "延时%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 30
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动破坏",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_destroy",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdph.png",
+                "on": "开启/zdph.png",
+                "off": "关闭/zdph.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "破坏模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "line",
+                            "name": "线性",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "在自身位置竖一字型破坏"
+                        },
+                        {
+                            "key": "cross",
+                            "name": "十字",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "在自身位置竖十字型破坏"
+                        },
+                        {
+                            "key": "matrix",
+                            "name": "矩阵",
+                            "color": "$文本颜色",
+                            "checked": true,
+                            "size": 8,
+                            "tip": "在自身位置10*10矩阵破坏"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动点击",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_clicker",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zddj.png",
+                "on": "开启/zddj.png",
+                "off": "关闭/zddj.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_break",
+                    "name": "不会中断",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "delay",
+                    "format": "操作延迟%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "点击破坏",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_click_destroy",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/djph.png",
+                "on": "开启/djph.png",
+                "off": "关闭/djph.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "破坏模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "line",
+                            "name": "线性",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "在点击位置竖一字型破坏"
+                        },
+                        {
+                            "key": "cross",
+                            "name": "十字",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "在点击位置竖十字型破坏"
+                        },
+                        {
+                            "key": "matrix",
+                            "name": "矩阵",
+                            "color": "$文本颜色",
+                            "checked": true,
+                            "size": 8,
+                            "tip": "在点击位置10*10矩阵破坏"
+                        }
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "packet_mode",
+                    "name": "发包模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "vanilla",
+                            "name": "原版",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "nukkit",
+                            "name": "Nukkit",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动破坏方块",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_destroy_block",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdpc.png",
+                "on": "开启/zdpc.png",
+                "off": "关闭/zdpc.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:cake",
+                    "name": "蛋糕",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:bed",
+                    "name": "床",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 7.0,
+                    "min": 1.0,
+                    "max": 40.0
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "packet_mode",
+                    "name": "发包模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "vanilla",
+                            "name": "原版",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "nukkit",
+                            "name": "Nukkit",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "无摔落伤害",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_fall",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/wdlsh.png",
+                "on": "开启/wdlsh.png",
+                "off": "关闭/wdlsh.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "下落速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.1,
+                    "max": 2.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "vanilla",
+                    "name": "Vanilla",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "mine_plex",
+                    "name": "MinePlex",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "cube_craft",
+                    "name": "CubeCraft",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "nukkit",
+                    "name": "Nukkit",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "auth_ground_pos",
+                    "name": "AuthGroundPos",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_move_check",
+                    "name": "绕过移动检查",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_fall_check",
+                    "name": "绕过摔落检查",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "无火焰附加",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_fire",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/whyfj.png",
+                "on": "开启/whyfj.png",
+                "off": "关闭/whyfj.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动吃物",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_eat",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdcs.png",
+                "on": "开启/zdcs.png",
+                "off": "关闭/zdcs.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "fast_eat",
+                    "name": "快速食用",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "health",
+                    "format": "生命值低于%.2f自动吃金苹果/附魔金苹果",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 0.5,
+                    "max": 40.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "单人无敌",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_invincible",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/drwd.png",
+                "on": "开启/drwd.png",
+                "off": "关闭/drwd.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "attack_hurt",
+                    "name": "攻击伤害",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "effect_hurt",
+                    "name": "药水伤害",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "forced_hurt",
+                    "name": "强制伤害",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        }
+    ]
+}

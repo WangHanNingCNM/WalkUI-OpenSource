@@ -1,0 +1,209 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "指令类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "开启跑路聊天栏",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww chatroom true"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "关闭跑路聊天栏",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww chatroom false"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━━━━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "清除药水效果",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww effect clear"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "夜视效果",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww effect 16 999999999 255 false"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "快速挖掘",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww effect 3 999999999 255 false"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "缓慢挥手",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww effect 4 999999999 5 false"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━━━━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "获取村庄坐标",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww locate village"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "获取下界要塞坐标",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww locate fortress"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "获取末地要塞坐标",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww locate stronghold"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "获取末地城坐标",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww locate endcity"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "获取哨塔坐标",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "run_command": "/ww locate pillageroutpost"
+        }
+    ]
+}

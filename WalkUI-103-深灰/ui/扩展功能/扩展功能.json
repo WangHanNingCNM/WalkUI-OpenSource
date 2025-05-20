@@ -1,0 +1,210 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "扩展功能",
+        "size": 15,
+        "elevation": 50,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "网络数据包管理+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_network_packet_mgr"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ],
+            "tag": "fun_WTool",
+            "items": [
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "停止刷屏",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "send_message": "你妈逼_tc"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "自定义刷屏",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "自定义刷屏"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "刷屏卡人",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "刷屏卡人"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "刷屏卡服",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "刷屏卡服"
+                },
+                {
+                    "type": "GradientTextView",
+                    "name": "━━━━━━━",
+                    "start_color": "#00BFFF",
+                    "end_color": "#8A2BE2",
+                    "size": 12,
+                    "padding": [
+                        0,
+                        -4,
+                        0,
+                        -4
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "自动坐骑崩服",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "自动坐骑崩服"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "召唤坐骑",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "召唤坐骑"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "传送千万格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "run_command": "/ww tp 99999999 99999999 99999999"
+                },
+                {
+                    "type": "GradientTextView",
+                    "name": "━━━━━━━",
+                    "start_color": "#00BFFF",
+                    "end_color": "#8A2BE2",
+                    "size": 12,
+                    "padding": [
+                        0,
+                        -4,
+                        0,
+                        -4
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "停止脚本",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "send_message": "你妈逼_tc2"
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "name": "一键骂人",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "一键扣字"
+                }
+            ]
+        }
+    ]
+}

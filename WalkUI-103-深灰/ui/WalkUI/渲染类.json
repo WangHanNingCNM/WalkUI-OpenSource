@@ -1,0 +1,1254 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "渲染类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$渲染类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "实体追踪",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_tracer",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "item",
+                    "name": "掉落物",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "line_width",
+                    "format": "线条宽度%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.0,
+                    "min": 1.0,
+                    "max": 8.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_count",
+                    "format": "最大数量%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_distance",
+                    "format": "最大距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 128.0,
+                    "min": 50.0,
+                    "max": 500.0
+                },
+                {
+                    "type": "ColorPicker",
+                    "key": "color",
+                    "name": "自定义颜色",
+                    "color": "$文本颜色",
+                    "padding": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ],
+                    "default_color": "#FFFFFF",
+                    "ok": "确定",
+                    "cancel": "取消"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "ESP",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_esp",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "item",
+                    "name": "掉落物",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "line_width",
+                    "format": "线条宽度%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.0,
+                    "min": 1.0,
+                    "max": 8.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_count",
+                    "format": "最大数量%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "max_distance",
+                    "format": "最大距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 128.0,
+                    "min": 50.0,
+                    "max": 500.0
+                },
+                {
+                    "type": "ColorPicker",
+                    "key": "color",
+                    "name": "自定义颜色",
+                    "color": "$文本颜色",
+                    "padding": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ],
+                    "default_color": "#FFFFFF",
+                    "ok": "确定",
+                    "cancel": "取消"
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "渲染模式",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        0
+                    ],
+                    "key": "mode",
+                    "items": [
+                        {
+                            "key": "2d",
+                            "name": "2D",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "2d_fill",
+                            "name": "2D填充",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "3d",
+                            "name": "3D",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "3d_fill",
+                            "name": "3D填充",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "无粒子显示",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_particle",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "effect",
+                    "name": "特效",
+                    "color": "$文本颜色",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "放大镜",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_zoom",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "fov",
+                    "format": "视角%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 120.0,
+                    "min": 0.0,
+                    "max": 150.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "modifier",
+                    "format": "附加值%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "名称渲染",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_name_tags",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "player",
+                    "name": "玩家",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_name",
+                    "name": "显示名称",
+                    "color": "$文本颜色",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_health",
+                    "name": "显示血量",
+                    "color": "$文本颜色",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_armor",
+                    "name": "显示装备",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_weapon",
+                    "name": "显示武器",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_distance",
+                    "name": "显示距离",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_position",
+                    "name": "显示坐标",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "文本大小%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.99,
+                    "min": 0.1,
+                    "max": 50.0
+                },
+                {
+                    "type": "ColorPicker",
+                    "key": "color",
+                    "name": "自定义颜色",
+                    "color": "$文本颜色",
+                    "padding": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ],
+                    "default_color": "#FF0000",
+                    "ok": "确定",
+                    "cancel": "取消"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "箱子渲染",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_chest_esp",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_name",
+                    "name": "显示名称",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_distance",
+                    "name": "显示距离",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_position",
+                    "name": "显示坐标",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_count",
+                    "name": "显示物品数量",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_items",
+                    "name": "显示物品信息",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "size",
+                    "format": "文本大小%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.99,
+                    "min": 0.1,
+                    "max": 50.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "方块渲染",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_block_render",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:diamond_ore",
+                    "name": "[快捷]钻石矿石",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:gold_ore",
+                    "name": "[快捷]金矿石",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:iron_ore",
+                    "name": "[快捷]铁矿石",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "minecraft:smithing_table",
+                    "name": "[快捷]锻造台",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "TextView",
+                    "key": "list",
+                    "name": "显示列表",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "add",
+                    "name": "添加新方块",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "remove",
+                    "name": "移除方块",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "最大渲染数%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "渲染距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50.0,
+                    "min": 1.0,
+                    "max": 1000.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "主界面模块",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_hud_module",
+            "checked": true,
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_armor",
+                    "name": "显示装备信息",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "array_list",
+                    "name": "显示功能信息",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "short_name",
+                    "name": "使用短名称",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "show_health",
+                    "name": "显示实体血条",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "字体",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        0
+                    ],
+                    "key": "font",
+                    "items": [
+                        {
+                            "key": "default",
+                            "name": "默认",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "smooth",
+                            "name": "光滑",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "ui",
+                            "name": "UI",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "unicode",
+                            "name": "Unicode",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "alpha",
+                    "format": "透明度%.1f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 0.3,
+                    "min": 0.1,
+                    "max": 1.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "cycle_speed",
+                    "format": "循环速度%.1f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 1.5,
+                    "min": 1.0,
+                    "max": 5.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "saturation",
+                    "format": "颜色饱和度%.1f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        10
+                    ],
+                    "value": 1.0,
+                    "min": 1.0,
+                    "max": 5.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "array_offset_x",
+                    "format": "功能宽度偏移%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.0,
+                    "min": 0.0,
+                    "max": 10.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "array_offset_y",
+                    "format": "功能高度偏移%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3.0,
+                    "min": 0.0,
+                    "max": 10.0
+                }
+            ],
+            "invoke_methods": [
+                {
+                    "name": "setEnabled",
+                    "arguments": [
+                        "boolean"
+                    ],
+                    "parameters": [
+                        false
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "方块透视",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_xray",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "regex:ore|ancient_debris",
+                    "name": "矿物",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "regex:lava|water",
+                    "name": "液体",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "regex:chest|shulker_box",
+                    "name": "箱子",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "regex:portal|amethyst_block|ancient_debris|command_block|repeating_command_block|chain_command_block|structure_block|deny|allow|bedrock|border_block",
+                    "name": "其它",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "方块轮廓",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_block_outline",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rainbow",
+                    "name": "彩虹",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "视图模型",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_view_model",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "translate",
+                    "name": "平移",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "translate_x",
+                    "format": "X轴平移%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.5,
+                    "min": -2.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "translate_y",
+                    "format": "Y轴平移%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.3,
+                    "min": -2.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "translate_z",
+                    "format": "Z轴平移%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": -0.8,
+                    "min": -2.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "rotate",
+                    "name": "旋转",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rotate_angle",
+                    "format": "旋转角度%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.8,
+                    "min": 0.0,
+                    "max": 6.3
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rotate_x",
+                    "format": "X轴旋转%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.0,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rotate_y",
+                    "format": "Y轴旋转%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.0,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "rotate_z",
+                    "format": "Z轴旋转%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.1,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "scale",
+                    "name": "缩放",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "scale_x",
+                    "format": "X轴缩放%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "scale_y",
+                    "format": "Y轴缩放%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.8,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "scale_z",
+                    "format": "Z轴缩放%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.0,
+                    "min": 0.0,
+                    "max": 2.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "swing_animation",
+                    "name": "手持动画",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "手持动画类型",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        0
+                    ],
+                    "key": "swing_animation_type",
+                    "items": [
+                        {
+                            "key": "1",
+                            "name": "1",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "2",
+                            "name": "2",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "3",
+                            "name": "3",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

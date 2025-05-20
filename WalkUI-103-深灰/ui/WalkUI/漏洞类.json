@@ -1,0 +1,244 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "漏洞类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$漏洞类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "崩溃服务器",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_crash_server",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/bkfwq.png",
+                "on": "开启/bkfwq.png",
+                "off": "关闭/bkfwq.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "particle",
+                    "name": "粒子爆炸",
+                    "color": "$文本颜色",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "multipleRpc",
+                    "name": "多发RPC",
+                    "color": "$文本颜色",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "forwardRpc",
+                    "name": "转发RPC",
+                    "color": "$文本颜色",
+                    "size": 10
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "antiPacket",
+                    "name": "反数据包攻击",
+                    "color": "$文本颜色",
+                    "size": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "数据包%d个",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 200
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "音频控制",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_sound_engine",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ypkz.png",
+                "on": "开启/ypkz.png",
+                "off": "关闭/ypkz.png",
+                "no_circle": true
+            },
+            "on": "只支持原版特性的服务器上使用",
+            "items": [
+                {
+                    "type": "TextView",
+                    "key": "edit_id",
+                    "name": "编辑音频ID",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "random",
+                    "name": "随机ID",
+                    "color": "$文本颜色",
+                    "size": 10
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "record",
+                    "name": "录制音频",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "on": "录制来自服务器的音效。录制时请勿打开播放"
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "play_record",
+                    "name": "播放录制",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "on": "播放录制的音频。播放时请勿打开录制"
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "播放对象",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "none",
+                            "name": "无播放",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "local",
+                            "name": "自身位置",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "player",
+                            "name": "所有玩家",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "checked": true
+                        },
+                        {
+                            "key": "entity",
+                            "name": "所有实体",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "save",
+                    "name": "保存音频数据",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "load",
+                    "name": "加载音频数据",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

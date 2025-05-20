@@ -1,0 +1,230 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "设置类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$设置类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "显示水印",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_watermark"
+        },
+        {
+            "type": "TextView",
+            "name": "删除游戏数据",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_delete_app_data"
+        },
+        {
+            "type": "TextView",
+            "name": "删除用户数据",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_delete_user_data"
+        },
+        {
+            "type": "TextView",
+            "name": "删除下载包缓存",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_delete_pack_cache"
+        },
+        {
+            "type": "TextView",
+            "name": "退出游戏登录",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_netease_logout"
+        },
+        {
+            "type": "TextView",
+            "name": "RN显示",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_visible"
+        },
+        {
+            "type": "TextView",
+            "name": "RN隐藏",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_gone"
+        },
+        {
+            "type": "TextView",
+            "name": "RN开启",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_open"
+        },
+        {
+            "type": "TextView",
+            "name": "RN关闭",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_close"
+        },
+        {
+            "type": "TextView",
+            "name": "显示开发配置窗口",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_show_dev_options_dialog"
+        },
+        {
+            "type": "TextView",
+            "name": "MCPDecrypt",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_mcp_decrypt"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "RN Debug",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_rn_debugable"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "悬浮窗口半屏显示",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "checked": true,
+            "register_setting": "setting_window_cut"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "隐藏菜单快捷按钮(长按)",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_hide_menu_shortcut",
+            "shortcut": {
+                "type": "CheckedButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "icon": "ic_menu_show.png",
+                "on": "ic_menu_hide.png",
+                "off": "ic_menu_show.png"
+            }
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "WTool",
+        "size": 15,
+        "elevation": 50,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "",
+            "color": "$文本颜色",
+            "size": 0,
+            "padding": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "tag": "fun_WTool",
+            "items": [
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "gnsx",
+                    "name": "功能刷新",
+                    "color": "$文本颜色",
+                    "size": 15,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "EditText",
+                    "key": "ip",
+                    "name": "IP端口",
+                    "color": "$文本颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 64,
+                    "hint": "输入IP 端口",
+                    "text": ""
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "exeip",
+                    "name": "IP外进",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "tcword",
+                    "name": "秒退游戏",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "banf",
+                    "name": "防卡自己",
+                    "color": "$文本颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "bana",
+                    "name": "飞踢全体",
+                    "color": "$文本颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "wtadd",
+                    "name": "添加卡人",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "wtremove",
+                    "name": "停止卡人",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "sound": "点击.mp3",
+                    "key": "wtlist",
+                    "name": "查看列表",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bansd",
+                    "format": "卡人速度 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "xykg",
+                    "name": "暗影囚笼",
+                    "color": "$文本颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "xypczj",
+                    "name": "排除自己",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "xyyy",
+                    "name": "播放音乐",
+                    "checked": true,
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "xyjl",
+                    "format": "距离 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 100,
+                    "min": 0,
+                    "max": 200
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "xydx",
+                    "format": "黑影大小 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 10
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "xyyc",
+                    "format": "延迟 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "xymbsl",
+                    "format": "目标数量 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "xysl",
+                    "format": "黑影数量 %d",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 20
+                }
+            ]
+        }
+    ]
+}

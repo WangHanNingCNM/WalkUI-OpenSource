@@ -1,0 +1,645 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "辅助类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$辅助类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "建筑工具",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "script_build_tool"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "快速建造",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_fast_build",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ksjz.png",
+                "on": "开启/ksjz.png",
+                "off": "关闭/ksjz.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "建造模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "fill",
+                            "name": "填充",
+                            "color": "$文本颜色",
+                            "checked": true,
+                            "size": 8,
+                            "tip": "点击的两个方块位置会作为起点和终点"
+                        },
+                        {
+                            "key": "frame",
+                            "name": "框架",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的两个方块位置会作为起点和终点"
+                        },
+                        {
+                            "key": "hollow",
+                            "name": "空心",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的两个方块位置会作为起点和终点"
+                        },
+                        {
+                            "key": "pellet",
+                            "name": "圆球",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的位置会作为起点"
+                        },
+                        {
+                            "key": "cylinder",
+                            "name": "圆柱",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的位置会作为起点"
+                        },
+                        {
+                            "key": "cone",
+                            "name": "圆锥",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的位置会作为起点"
+                        },
+                        {
+                            "key": "destroy",
+                            "name": "破坏",
+                            "color": "$文本颜色",
+                            "size": 8,
+                            "tip": "点击的两个方块位置会作为起点和终点"
+                        }
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "radius",
+                    "format": "圆半径%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 5,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "height",
+                    "format": "圆高度%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 100
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "solid",
+                    "name": "圆实心",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "tip": "设置圆是否为实心体"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "操作距离%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 6.5,
+                    "min": 1.0,
+                    "max": 12.0
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "retry",
+                    "name": "失败重试",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true,
+                    "tip": "当放置/破坏时操作失败会尝试重新放置/破坏"
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "line_box",
+                    "name": "边界线盒",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "checked": true,
+                    "tip": "在操作的区域边界线盒"
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "pick",
+                    "name": "方块/生物选择",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "tip": "点击方块/生物会获取对应的物品和刷怪蛋（必须先为创造模式）"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "连锁挖掘",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_chain_mining",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/lswj.png",
+                "on": "开启/lswj.png",
+                "off": "关闭/lswj.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "破坏半径%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 7.0,
+                    "min": 1.0,
+                    "max": 12.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "search_distance",
+                    "format": "搜索半径%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 10.0,
+                    "min": 1.0,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "启用新触控",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "script_new_touch_control",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "mode",
+                    "name": "控制模式",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "touch",
+                            "name": "摇杆点击进行互动",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "crosshair",
+                            "name": "方向键并点击进行互动",
+                            "color": "$文本颜色",
+                            "size": 8
+                        },
+                        {
+                            "key": "classic",
+                            "name": "摇杆并瞄准十字线",
+                            "color": "$文本颜色",
+                            "size": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动钓鱼",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_fishing",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zddy.png",
+                "on": "开启/zddy.png",
+                "off": "关闭/zddy.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "delay",
+                    "format": "抛竿延迟%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 20
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "背包移动",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_inventory_move",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "swap",
+                    "name": "交换模式",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏左上格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "crafting_left_top"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏右上格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "crafting_right_top"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏左下格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "crafting_left_bottom"
+                },
+                {
+                    "type": "TextView",
+                    "name": "合成栏右下格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "crafting_right_bottom"
+                },
+                {
+                    "type": "TextView",
+                    "name": "光标格",
+                    "color": "$文本颜色",
+                    "size": 10,
+                    "padding": [
+                        10,
+                        5,
+                        10,
+                        5
+                    ],
+                    "key": "cursor"
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "name": "自由视角",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_free_camera"
+        },
+        {
+            "type": "TextView",
+            "name": "加入游戏+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "tag": "fun_join_game"
+        },
+        {
+            "type": "TextView",
+            "name": "租赁服密码爆破",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "tag": "fun_client_manager"
+        },
+        {
+            "type": "EditText",
+            "name": "联机假名",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "max_lines": 1,
+            "hint": "内容为空恢复默认",
+            "tag": "fun_fake_name"
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自定义等级标识",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_custom_growth_level",
+            "items": [
+                {
+                    "type": "RadioGroup",
+                    "key": "type",
+                    "name": "标识",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "wood",
+                            "name": "橡木",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "albizia",
+                            "name": "合欢木",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "sand",
+                            "name": "沙块",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "stone",
+                            "name": "圆石",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "iron",
+                            "name": "精铁",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "emerald",
+                            "name": "绿宝石",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "gold",
+                            "name": "黄金",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "diamond",
+                            "name": "钻石",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "purpur",
+                            "name": "紫珀",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "bedrock",
+                            "name": "基岩",
+                            "color": "$文本颜色",
+                            "size": 15
+                        }
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "level",
+                    "name": "等级",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "items": [
+                        {
+                            "key": "1",
+                            "name": "Ⅰ",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "2",
+                            "name": "Ⅱ",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "3",
+                            "name": "Ⅲ",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "4",
+                            "name": "Ⅳ",
+                            "color": "$文本颜色",
+                            "size": 15
+                        },
+                        {
+                            "key": "5",
+                            "name": "Ⅴ",
+                            "color": "$文本颜色",
+                            "size": 15
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

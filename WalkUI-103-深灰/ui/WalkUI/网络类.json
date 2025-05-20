@@ -1,0 +1,205 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "网络类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$网络类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "重复数据包",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_multiple_packet",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/cffb.png",
+                "on": "开启/cffb.png",
+                "off": "关闭/cffb.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "count",
+                    "format": "数量%d",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 50,
+                    "min": 1,
+                    "max": 100
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "停止数据包",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_packet",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/tzfb.png",
+                "on": "开启/tzfb.png",
+                "off": "关闭/tzfb.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "name": "网络数据包管理+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_network_packet_mgr"
+        },
+        {
+            "type": "TextView",
+            "name": "附魔菜单+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                8,
+                8,
+                8,
+                8
+            ],
+            "tag": "fun_enchant_menu",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "icon": "ic_enchant_menu.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "name": "物品编辑器+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                8,
+                8,
+                8,
+                8
+            ],
+            "tag": "fun_item_editor",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "icon": "ic_item_editor.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "name": "NBT编辑器+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                8,
+                8,
+                8,
+                8
+            ],
+            "tag": "fun_nbt_editor",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "icon": "ic_nbt_editor.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "name": "打开商店+",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                8,
+                8,
+                8,
+                8
+            ],
+            "tag": "fun_open_shop",
+            "tip": "您只能在花雨庭中使用此功能",
+            "shortcut": {
+                "type": "ClickButton",
+                "params": [
+                    35,
+                    35
+                ],
+                "icon": "ic_open_shop.png",
+                "no_circle": true
+            }
+        }
+    ]
+}

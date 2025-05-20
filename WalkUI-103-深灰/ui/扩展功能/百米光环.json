@@ -1,0 +1,225 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "百米光环",
+        "size": 15,
+        "elevation": 4,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "margins": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "color": "$menu_color",
+    "alpha": 0.85,
+    "can_close": true,
+    "hide": true,
+    "margins": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "退出百米光环",
+            "color": "$文本颜色",
+            "size": 12,
+            "send_message": "iaexit",
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "加载百米光环",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "UIJS/百米.js",
+            "tag": "fun_no_fire",
+            "items": [
+                {
+                    "type": "Switch",
+                    "name": "百米大刀",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "key": "stop",
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "params": [
+                            50,
+                            25
+                        ],
+                        "icon": "关闭/bmdd.png",
+                        "on": "开启/bmdd.png",
+                        "off": "关闭/bmdd.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "POS_Y_MAX",
+                    "format": "最高Y  %d",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 200,
+                    "min": 20,
+                    "max": 200
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "MAX_RANGE",
+                    "format": "攻击距离 %d",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 500,
+                    "min": 100,
+                    "max": 2000
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "ATTACK_COUNT",
+                    "format": "攻击次数 %d",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 3,
+                    "min": 1,
+                    "max": 6
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "AUTO_INTERVAL",
+                    "format": "传送间隔 %d",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "value": 10,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "RadioGroup",
+                    "name": "移动模式",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "key": "mode",
+                    "items": [
+                        {
+                            "name": "Pos",
+                            "key": "pos",
+                            "size": 12,
+                            "color": "$文本颜色"
+                        },
+                        {
+                            "name": "Motion",
+                            "key": "motion",
+                            "size": 12,
+                            "color": "$文本颜色",
+                            "checked": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "name": "智能队友前置",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "tag": "fun_smart_team"
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "AutoMode",
+                    "name": "自动模式",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "checked": true,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "Team",
+                    "name": "空岛智能队友",
+                    "color": "$文本颜色",
+                    "size": 12,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                }
+            ]
+        }
+    ]
+}

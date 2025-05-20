@@ -1,0 +1,210 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "脚本类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "GradientTextView",
+            "name": "━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "退出脚本",
+            "color": "$文本颜色",
+            "size": 12,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "send_message": "tc"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "坐骑崩服",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/崩服.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "空手崩服",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/崩溃器.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "传送挖矿",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/传送挖矿.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "定位玩家",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/传送玩家.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "大陀螺",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/大陀螺.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "滴滴打车",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/滴滴打车.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "聊天特效",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/聊天特效.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "防绕禁言",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/绕防禁言.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "无限夜视",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/无限夜视.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "自动破坏",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/自动破坏.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "原地复活",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "load_script": "其他JS/原地复活.js"
+        }
+    ]
+}

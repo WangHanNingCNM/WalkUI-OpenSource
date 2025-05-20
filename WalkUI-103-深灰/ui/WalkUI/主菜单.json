@@ -1,0 +1,444 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "WalkUI",
+        "size": 15,
+        "elevation": 50,
+        "background": "$标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色1",
+            "$标题颜色2"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": false,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "复制IP",
+            "color": "$文本颜色",
+            "size": 8,
+            "padding": [
+                5,
+                4,
+                5,
+                4
+            ],
+            "tag": "fun_join_copy_address"
+        },
+        {
+            "type": "Switch",
+            "name": "水印",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "color": "$文本颜色",
+            "size": 8,
+            "padding": [
+                5,
+                4,
+                5,
+                4
+            ],
+            "tag": "fun_watermark"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "长按水印[方]",
+            "color": "$文本颜色",
+            "size": 8,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    150,
+                    75
+                ],
+                "icon": "其他/fx.png",
+                "on": "其他/fx.png",
+                "off": "其他/fx.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "长按水印[长]",
+            "color": "$文本颜色",
+            "size": 8,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    180,
+                    30
+                ],
+                "icon": "其他/tx.png",
+                "on": "其他/tx.png",
+                "off": "其他/tx.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "世界",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/世界类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "玩家",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/玩家类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "战斗",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/战斗类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "移动",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/移动类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "渲染",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/渲染类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "网络",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/网络类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "辅助",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/辅助类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "漏洞",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/漏洞类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "设置",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "WalkUI/设置类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "指令",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "扩展功能/指令类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "脚本",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "扩展功能/脚本类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "扩展",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "扩展功能/扩展功能"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "百米",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "扩展功能/百米光环"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "WT",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "扩展功能/wt"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "NST",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/NetSerT"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "NX",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NoveXare/NoveXare"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "BTR",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "建筑工具Rebirth/建筑工具"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "绵羊",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "绵羊工具.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "导出",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "建筑助手-导出.js"
+        },
+        {
+            "type": "GradientTextView",
+            "name": "━━━━",
+            "start_color": "#00BFFF",
+            "end_color": "#8A2BE2",
+            "size": 12,
+            "padding": [
+                0,
+                -4,
+                0,
+                -4
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "JS菜单",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "JS菜单.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "PY菜单",
+            "color": "$文本颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "PY菜单.js"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "隐藏UI",
+            "color": "$menu_item_hide_color",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "fun_hide"
+        }
+    ]
+}

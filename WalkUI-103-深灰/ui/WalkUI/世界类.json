@@ -1,0 +1,127 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "世界类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$世界类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "RadioGroup",
+            "name": "游戏模式",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                0
+            ],
+            "tag": "fun_game_mode",
+            "items": [
+                {
+                    "key": "survival",
+                    "name": "生存",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "key": "create",
+                    "name": "创造",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "key": "adventure",
+                    "name": "冒险",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "key": "spectator",
+                    "name": "观察者",
+                    "color": "$文本颜色",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "游戏速度",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_timer",
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 20.0,
+                    "min": 0.0,
+                    "max": 100.0
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "name": "进入本地游戏",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "tag": "fun_local_game"
+        },
+        {
+            "type": "TextView",
+            "name": "创建本地世界",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                10,
+                5,
+                10,
+                5
+            ],
+            "tag": "fun_create_world"
+        }
+    ]
+}

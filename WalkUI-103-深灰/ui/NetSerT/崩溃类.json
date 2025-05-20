@@ -1,0 +1,634 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "崩溃类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$js_title_background",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$js_title",
+            "$js_title"
+        ],
+        "image_scaled": false
+    },
+    "color": "$js_background",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NetSerT",
+            "color": "$js_text",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_NetSerT",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "ksbf",
+                    "name": "空手崩服",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "ksbf_rg",
+                    "name": "绕过反空手",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "msg_gl",
+                    "name": "消息管理",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "msg_chant",
+                    "name": "防绕禁言",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "r1",
+                            "name": "强调消息",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "r2",
+                            "name": "私聊消息",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "r3",
+                            "name": "隐藏名字",
+                            "color": "$js_subtext",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "chant",
+                    "name": "自动刷屏",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "RadioGroup",
+                    "key": "chant_nr",
+                    "name": "刷屏模式",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "items": [
+                        {
+                            "key": "chant1",
+                            "name": "自定义模式",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "chant2",
+                            "name": "彩色入侵",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "chant3",
+                            "name": "骂人词汇",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "chant4",
+                            "name": "三字经",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "chant5",
+                            "name": "彩色字符",
+                            "color": "$js_subtext",
+                            "size": 10
+                        },
+                        {
+                            "key": "chant6",
+                            "name": "随机发言",
+                            "color": "$js_subtext",
+                            "size": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "EditText",
+                    "key": "text",
+                    "name": "刷屏内容",
+                    "color": "$js_subtext",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 64,
+                    "hint": "输入内容"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "text_copy",
+                    "format": "文本复制  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "chant_spd",
+                    "format": "速度  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "chant_lag",
+                    "format": "延迟  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "text_color",
+                    "name": "随机颜色",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "hz",
+                    "name": "随机后缀",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "hzcd",
+                    "format": "后缀长度  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "fucksp",
+                    "name": "反制刷屏",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "cklist",
+                    "name": "查看列表",
+                    "color": "$js_subtext",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "czlist",
+                    "name": "重置列表",
+                    "color": "$js_subtext",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "fucklj",
+                    "name": "屏蔽刷屏玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fuckc",
+                    "format": "检测时间内  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fuckspsl",
+                    "format": "时间内收到  %d 条消息",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fucktextsl",
+                    "format": "消息字符长度  %d × 10",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fuckd",
+                    "format": "反击速度  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+                    "key": "bkgh",
+                    "name": "崩溃光环",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bkgh_sd",
+                    "format": "速度 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bkgh_fwbk",
+                    "name": "范围崩溃",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "bkgh_bkjl",
+                    "format": "距离 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bkgh_zdyxzq",
+                    "name": "自定义选择器",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "EditText",
+                    "key": "bkgh_xzq",
+                    "name": "输入选择器",
+                    "color": "$js_subtext",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "max_lines": 64,
+                    "hint": "输入选择器",
+                    "text": "@s"
+                },
+                {
+                    "type": "TextView",
+                    "name": "一键选择目标",
+                    "color": "$js_subtext",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mb_all",
+                    "name": "全部玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mb_cz",
+                    "name": "创造玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mb_sc",
+                    "name": "生存玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mb_mx",
+                    "name": "冒险玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mb_gcz",
+                    "name": "观察者玩家",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "fdj",
+                    "name": "复读机",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "fdjsl",
+                    "format": "复读数量  %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "key": "bkq",
+                    "name": "崩溃器",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bkq_sp",
+                    "name": "刷屏",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bkq_zlb",
+                    "name": "指令包",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "bkq_omg",
+                    "name": "拷打机器人",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        }
+    ]
+}

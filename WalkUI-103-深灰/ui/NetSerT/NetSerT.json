@@ -1,0 +1,142 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "NetSerT",
+        "size": 15,
+        "elevation": 50,
+        "background": "$js_title_background",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$js_title",
+            "$js_title"
+        ]
+    },
+    "color": "$js_background",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "加载NetSerT",
+            "tip": "不要多次点击我",
+            "tag": "extra_NetSerT",
+            "color": "$js_text",
+            "size": 11,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "NetSerT.js",
+            "items": [
+                {
+                    "type": "TextView",
+                    "key": "exit",
+                    "name": "退出脚本",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "崩溃类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/崩溃类"
+        },
+            {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "攻击类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/攻击类"
+        },
+             {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "玩家类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/玩家类"
+        },
+             {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "辅助类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/辅助类"
+        },
+             {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "渲染类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/渲染类"
+        },
+             {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "权限类",
+            "color": "$js_title",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "NetSerT/权限类"
+        }
+    ]
+}

@@ -1,0 +1,683 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "移动类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$移动类",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$标题颜色3",
+            "$标题颜色4"
+        ],
+        "image_scaled": true
+    },
+    "color": "$UI背景",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "高跳",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_jump_high",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/gt.png",
+                "on": "开启/gt.png",
+                "off": "关闭/gt.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "val",
+                    "format": "力度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.75,
+                    "min": 0.1,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "移动跳跃",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_move_jump",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ydty.png",
+                "on": "开启/ydty.png",
+                "off": "关闭/ydty.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动冲刺",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_sprint",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdcc.png",
+                "on": "开启/zdcc.png",
+                "off": "关闭/zdcc.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "extra_speed",
+                    "name": "额外加速",
+                    "color": "$文本颜色",
+                    "checked": true,
+                    "size": 8
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "移动速度%.1f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.3,
+                    "min": 0.1,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "踏空",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_air_jump",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/kzty.png",
+                "on": "开启/kzty.png",
+                "off": "关闭/kzty.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "auto_jump",
+                    "name": "自动跳跃",
+                    "checked": true,
+                    "color": "$文本颜色",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "冲刺",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_air_sprint",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/pqbb.png",
+                "on": "开启/pqbb.png",
+                "off": "关闭/pqbb.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "move_speed",
+                    "format": "移动速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.1,
+                    "min": 0.1,
+                    "max": 3.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "up_down_speed",
+                    "format": "上下速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 2.0,
+                    "min": 0.0,
+                    "max": 20.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动前进",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_forward",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdqj.png",
+                "on": "开启/zdqj.png",
+                "off": "关闭/zdqj.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "点击传送",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_click_teleport",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/djcs.png",
+                "on": "开启/djcs.png",
+                "off": "关闭/djcs.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动滑翔",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_gliding",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdhx.png",
+                "on": "开启/zdhx.png",
+                "off": "关闭/zdhx.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动游泳",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_swimming",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdyy.png",
+                "on": "开启/zdyy.png",
+                "off": "关闭/zdyy.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "虚空回弹",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_anti_void",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/xkht.png",
+                "on": "开启/xkht.png",
+                "off": "关闭/xkht.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "下落速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.3,
+                    "min": 0.1,
+                    "max": 3.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "无蛛网/细雪减速",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_web",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/wfkjs.png",
+                "on": "开启/wfkjs.png",
+                "off": "关闭/wfkjs.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "使用物品不减速",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_no_slow_down",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/wwpjs.png",
+                "on": "开启/wwpjs.png",
+                "off": "关闭/wwpjs.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "自动爬梯",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_auto_ladder",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zdpt.png",
+                "on": "开启/zdpt.png",
+                "off": "关闭/zdpt.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "speed",
+                    "format": "速度%.3f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 0.6,
+                    "min": 0.1,
+                    "max": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "水上行走",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_jesus",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ssxz.png",
+                "on": "开启/ssxz.png",
+                "off": "关闭/ssxz.png",
+                "no_circle": true
+            }
+        },
+        {
+            "type": "Switch",
+            "name": "一步登天",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_step",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/ybdt.png",
+                "on": "开启/ybdt.png",
+                "off": "关闭/ybdt.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "SeekBar",
+                    "key": "height",
+                    "format": "高度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.0,
+                    "min": 0.5625,
+                    "max": 10.0
+                }
+            ]
+        },
+        {
+            "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+            "name": "坐骑飞行",
+            "color": "$文本颜色",
+            "size": 10,
+            "padding": [
+                5,
+                0,
+                5,
+                0
+            ],
+            "tag": "fun_ride_flying",
+            "shortcut": {
+                "type": "CheckedButton",
+                "on_sound": "开关.mp3",
+                "off_sound": "开关.mp3",
+                "params": [
+                    50,
+                    25
+                ],
+                "icon": "关闭/zqfx.png",
+                "on": "开启/zqfx.png",
+                "off": "关闭/zqfx.png",
+                "no_circle": true
+            },
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_clip",
+                    "name": "允许穿墙",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "no_move",
+                    "name": "灵魂出窍",
+                    "color": "$文本颜色",
+                    "size": 8
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "update_chunk",
+                    "name": "更新区块",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "on": "使用船飞行时开启可以自动加载区块"
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "move_speed",
+                    "format": "移动速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 4.0,
+                    "min": 0.1,
+                    "max": 20.0
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "up_down_speed",
+                    "format": "上下速度%.2f",
+                    "color": "$文本颜色",
+                    "size": 8,
+                    "padding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "value": 1.5,
+                    "min": 0.1,
+                    "max": 20.0
+                }
+            ]
+        }
+    ]
+}

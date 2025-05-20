@@ -1,0 +1,478 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "攻击类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$js_title_background",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$js_title",
+            "$js_title"
+        ],
+        "image_scaled": false
+    },
+    "color": "$js_background",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "name": "NetSerT",
+            "color": "$js_text",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_NetSerT",
+            "items": [
+                {
+                    "type": "Switch",
+                    "key": "killme",
+                    "name": "自杀光环",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "killmeswing",
+                    "name": "挥手",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "killmeyc",
+                    "format": "延迟 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+                    "key": "attack_ddos",
+                    "name": "攻击卡人",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "ddos_sd",
+                    "format": "发送数量 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "TextView",
+                    "key": "adblacklist",
+                    "name": "添加黑名单",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "reblacklist",
+                    "name": "删除黑名单",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+                    "key": "ckblacklist",
+                    "name": "查看黑名单",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "killaura",
+                    "name": "杀戮光环",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "attack_hmd",
+                    "name": "黑名单",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "player",
+                    "name": "玩家",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "mob",
+                    "name": "生物",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "distance",
+                    "format": "距离 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 7,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "attack_sl",
+                    "format": "数量 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "attack_yc",
+                    "format": "攻击延迟 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "attack_cs",
+                    "format": "攻击次数 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+                    "key": "swing",
+                    "name": "是否挥手",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "infinite",
+                    "name": "无限光环",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "infinite_hmd",
+                    "name": "黑名单",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "inplayer",
+                    "name": "玩家",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "key": "inmob",
+                    "name": "生物",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "in_jl",
+                    "format": "距离 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 200,
+                    "min": 0,
+                    "max": 500
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "in_sl",
+                    "format": "数量 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 6,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "in_yc",
+                    "format": "攻击延迟 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 10,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "in_cs",
+                    "format": "攻击次数 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "in_py",
+                    "format": "返回偏移 y %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": -10,
+                    "max": 10
+                },
+                {
+                    "type": "Switch",
+                    "key": "inswing",
+                    "name": "是否挥手",
+                    "checked": true,
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "godmode",
+                    "name": "上帝模式",
+                    "color": "$js_text",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "god_sl",
+                    "format": "发包数量 %d",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "god_distance",
+                    "format": "距离 %d＊10",
+                    "color": "$js_subtext",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 30,
+                    "min": 0,
+                    "max": 50
+                }
+            ]
+        }
+    ]
+}
