@@ -1,0 +1,22 @@
+{
+  "PlayerAuthInputPacket": {
+    "id": 144,
+    "Translate": "玩家认证输入",
+    "count": 19
+  },
+  "PlayerActionPacket": {
+    "id": 36,
+    "Translate": "玩家操作",
+    "count": 5
+  },
+  "SubChunkRequestPacket": {
+    "id": 175,
+    "Translate": "子区块请求",
+    "count": 2
+  },
+  "ClientCacheBlobStatusPacket": {
+    "id": 135,
+    "Translate": "客户端缓存二进制大型对象状态",
+    "count": 2
+  }
+}
